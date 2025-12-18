@@ -1,0 +1,79 @@
+:global(:root) {
+    --bg-dark: #0b0f14;
+    --bg-panel: rgba(255, 255, 255, 0.08);
+    --text-primary: #e6edf3;
+    --text-muted: #9aa4af;
+    --accent-red: #e63946;
+    --accent-red-dark: #b72d38;
+    --accent-blue: #1d3557;
+    --accent-glow: rgb(247, 234, 179);
+}
+
+.rootLayoutHeader {
+    background: #111;
+}
+
+.rootLayoutNav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.rootLayoutLink {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+}
+
+
+.rootLayoutLinkActive {
+    color: white;
+    background-color: #444;
+    border-top: 2px solid var(--accent-glow);
+    
+}
+
+
+
+.root::before {
+    content: "";
+    position: fixed; 
+    inset: 0;
+    background:
+        linear-gradient(
+            rgba(11, 15, 20, 0.85),
+            rgba(11, 15, 20, 0.85)
+        ),
+        url("https://images.alphacoders.com/137/thumb-1920-1374849.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.root {
+    position: relative;
+    min-height: 100vh;
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+}
+
+.root::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(
+            rgba(11, 15, 20, 0.85),
+            rgba(11, 15, 20, 0.85)
+        ),
+        url("https://images.alphacoders.com/137/thumb-1920-1374849.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
