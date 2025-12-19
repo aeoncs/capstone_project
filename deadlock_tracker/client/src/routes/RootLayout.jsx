@@ -1,8 +1,17 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
 import styles from "./RootLayout.module.css";
 
 export default function RootLayout() {
+
+    // Health check to backend server
+
+     useEffect(() => {
+  fetch("http://localhost:5000/api/health")
+    .then(res => res.json())
+    .then(data => console.log(data));
+}, []);
 
 
     return (

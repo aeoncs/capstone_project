@@ -1,9 +1,14 @@
-import styles from './Home.module.css'
+import styles from './Home.module.css';
 
 export default function Home () {
+
+   
+
+
     return (
         <div className={styles.home}>
             <h1 className={styles.title}>Welcome to Deadlock Tracker</h1>
+
 
             <form className={styles.form}>
                 <label htmlFor="search"></label>
